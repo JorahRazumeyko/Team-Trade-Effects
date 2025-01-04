@@ -15,9 +15,21 @@ After obtaining the data on trades, we began to collect data on every team’s i
 Finally, we were looking at player salary as another measure for how a team was attempting to use a trade. By scraping all the links from players who were traded from the transactions page we were able to collect all the salaries of the players who were traded, allowing us to scrape each individual players statistics page. The idea behind adding player salary was that teams who traded for players with a lot more salary were looking to add superstar talent and ”go all in” to try and win even if it meant giving up significant future draft compensation. We combined the salary of all the players traded and added it to the data frame; additionally we found the change in average point differential and winning record before and after a trade. This data is
 depicted in [Figure 4](#figure-4) and [Figure 5](#figure-5).
 
-### <a name="figure-1"></a>Figure 1: Data Visualization
+## Visualization and Results
+
+### <a name="figure-1"></a>Figure 1: Trade Date
 ![Figure 1](Trade_Dates.png)
 
 The above [Figure 1](Trade_Dates.png) shows when trades occur during the regular season. It is noteworthy that even though the season started in October, teams only started trading in January. Furthermore, they almost all occur on the trade deadline for the regular season, since that is the last day to trade.
-In Figure 2, each dot corresponds to a trade that a team made during the 2022-23 NBA Season. The x-axis corresponds to the winning percentage of the team before the trade and the y axis corresponds to the winning percentage after the trade. The dotted line therefore represents maintaining the same winning percentage before and after the trade. In other words, if a point is on or close the line, then the trade had no impact on team’s wins. If a point is below the line, then the team was worse after the trade; if a point is above the line, then the team was better off after the trade. We can see that most teams, preformed better or the same after the trade. Furthermore, teams that already had a high winning percentage (above
+
+### <a name="figure-2"></a>Figure 2: Team Winning Percentage Before and After a Trade
+![Figure 2](Win_Perc.png)
+
+In [Figure 2](#figure-2), each dot corresponds to a trade that a team made during the 2022-23 NBA Season. The x-axis corresponds to the winning percentage of the team before the trade and the y-axis corresponds to the winning percentage after the trade. The dotted line therefore represents maintaining the same winning percentage before and after the trade. In other words, if a point is on or close the line, then the trade had no impact on team’s wins. If a point is below the line, then the team was worse after the trade; if a point is above the line, then the team was better off after the trade. We can see that most teams, preformed better or the same after the trade. Furthermore, teams that already had a high winning percentage (above 40%) before the trade, were less likely to do worse after the trade if they trade for only players instead of players and picks. It is also notable that the teams with the highest winning percentage in the league, maintained their winning percentage after the trade. Therefore it is safe for the best teams in the league during the regular season to experiment with improving their roster to improve their chances of winning in the playoffs.
+
+### <a name="figure-3"></a>Figure 3:  Team Average Point Differential Before and After a Trade
+![Figure 3](Point_Diffc.png)
+
+Similar to the previous plot, in [Figure 3](#figure-3), each dot corresponds to a trade that a team made during the 2022- 23 NBA Season. The x-axis corresponds to the average point differential of the team before the trade and the y axis corresponds to the average point differential after the trade. The dotted line therefore represents maintaining the same average point differential before and after the trade. If a point is below the line, then the team played worse after the trade; if a point is above the line, then the team played better after the trade. Here it is noteworthy that the teams who did worse after a trade, mostly traded for only picks or for picks and players. This suggests that it is better to prioritize players over picks to ensure success. Additionally, since the majority of teams that traded are have a higher average point differential after the trade, it is useful to
+
 
